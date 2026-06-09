@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganesh Raj | GR Design System — Typography</title>
+  <link rel="icon" href="https://ganeshraj0901.github.io/Logo/Fav_icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="../css/sidebars.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-light bg-success border-bottom-0 sticky-top">
+    <button class="navbar-toggler d-block d-md-none navbar-hieght"
+      type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#sidebar" aria-controls="sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="offcanvas offcanvas-start bg-success d-md-block"
+    tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <a href="../index.html" class="sidebar-logo">G·R</a>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+            data-bs-toggle="collapse" data-bs-target="#foundations-collapse-m" aria-expanded="true">
+            Foundations
+          </button>
+          <div class="collapse show" id="foundations-collapse-m">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="d-inline-flex text-decoration-none rounded"><span class="activeLink rounded">Typography</span></a></li>
+              <li><a href="color.html" class="d-inline-flex text-decoration-none rounded">Color</a></li>
+              <li><a href="logo.html" class="d-inline-flex text-decoration-none rounded">Logo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#components-collapse-m" aria-expanded="false">
+            Components
+          </button>
+          <div class="collapse" id="components-collapse-m">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../components/component1.html" class="d-inline-flex text-decoration-none rounded">Nav Bar</a></li>
+              <li><a href="../components/component2.html" class="d-inline-flex text-decoration-none rounded">Thumbnail Card</a></li>
+              <li><a href="../components/component3.html" class="d-inline-flex text-decoration-none rounded">Before/After Toggle</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#patterns-collapse-m" aria-expanded="false">
+            Page Patterns
+          </button>
+          <div class="collapse" id="patterns-collapse-m">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../patterns/page1.html" class="d-inline-flex text-decoration-none rounded">Homepage</a></li>
+              <li><a href="../patterns/page2.html" class="d-inline-flex text-decoration-none rounded">Case Study</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar shadow">
+        <div class="position-sticky bg-success vh-100 pt-3 px-2">
+          <a href="../index.html" class="sidebar-logo">G·R</a>
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="true">
+                Foundations
+              </button>
+              <div class="collapse show" id="foundations-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="d-inline-flex text-decoration-none rounded"><span class="activeLink rounded">Typography</span></a></li>
+                  <li><a href="color.html" class="d-inline-flex text-decoration-none rounded">Color</a></li>
+                  <li><a href="logo.html" class="d-inline-flex text-decoration-none rounded">Logo</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                Components
+              </button>
+              <div class="collapse" id="components-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../components/component1.html" class="d-inline-flex text-decoration-none rounded">Nav Bar</a></li>
+                  <li><a href="../components/component2.html" class="d-inline-flex text-decoration-none rounded">Thumbnail Card</a></li>
+                  <li><a href="../components/component3.html" class="d-inline-flex text-decoration-none rounded">Before/After Toggle</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                Page Patterns
+              </button>
+              <div class="collapse" id="patterns-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../patterns/page1.html" class="d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                  <li><a href="../patterns/page2.html" class="d-inline-flex text-decoration-none rounded">Case Study</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="container-fluid overflow-auto">
+          <div class="row p-4 p-md-5">
+            <div id="content">
+
+              <h2 style="font-family:'Fraunces',sans-serif; color:#1A1A2E;">Typography</h2>
+              <p class="lead mb-5" style="max-width:640px;">The GR type system uses two typefaces: Fraunces for display headings and Work Sans for body copy and UI text. Together they create a clean, modern, and highly legible hierarchy.</p>
+
+              <!-- Type scale -->
+              <div class="mb-5">
+
+                <div class="py-4 border-bottom">
+                  <p class="mb-1 small text-muted" style="font-family:'Work Sans',sans-serif;">h1 · Fraunces · 3rem · 900 · Display</p>
+                  <h1 style="font-family:'Fraunces',sans-serif; color:#1A1A2E; font-size:3rem;">Page Title</h1>
+                  <p style="font-family:'Work Sans',sans-serif; color:#555; max-width:600px;">Use the Display heading for the single most important text element on a page — a hero headline or the page title. It should appear only once per page. The heavy weight of Fraunces commands immediate attention and establishes brand personality.</p>
+                </div>
+
+                <div class="py-4 border-bottom">
+                  <p class="mb-1 small text-muted" style="font-family:'Work Sans',sans-serif;">h2 · Fraunces · 2rem · 900 · Section Header</p>
+                  <h2 style="font-family:'Fraunces',sans-serif; color:#1A1A2E; font-size:2rem;">Section Header</h2>
+                  <p style="font-family:'Work Sans',sans-serif; color:#555; max-width:600px;">Use H2 to label major sections of a page such as Color, Typography, or Components. It creates a clear visual break between content zones. Keep H2 headings short — they are navigational anchors as much as they are titles.</p>
+                </div>
+
+                <div class="py-4 border-bottom">
+                  <p class="mb-1 small text-muted" style="font-family:'Work Sans',sans-serif;">h3 · Work Sans · 1.5rem · 600 · Subsection Title</p>
+                  <h3 style="font-family:'Work Sans',sans-serif; color:#1A1A2E; font-size:1.5rem; font-weight:600;">Subsection Title</h3>
+                  <p style="font-family:'Work Sans',sans-serif; color:#555; max-width:600px;">H3 is the first heading level set in Work Sans, signaling a shift from brand display type to functional UI type. Use it for named subsections within a larger section — for example, "Font Pairing" under Typography. It pairs naturally with body text below it.</p>
+                </div>
+
+                <div class="py-4 border-bottom">
+                  <p class="mb-1 small text-muted" style="font-family:'Work Sans',sans-serif;">h4 · Work Sans · 1.25rem · 600 · Card Title</p>
+                  <h4 style="font-family:'Work Sans',sans-serif; color:#1A1A2E; font-size:1.25rem; font-weight:600;">Card Title</h4>
+                  <p style="font-family:'Work Sans',sans-serif; color:#555; max-width:600px;">H4 is used for card titles, list item labels, and component names throughout the design system. It is compact enough to fit inside a card without overwhelming the description text below it. Use sentence case for H4 labels.</p>
+                </div>
+
+                <div class="py-4 border-bottom">
+                  <p class="mb-1 small text-muted" style="font-family:'Work Sans',sans-serif;">p · Work Sans · 1rem · 400 · Body</p>
+                  <p style="font-family:'Work Sans',sans-serif; color:#333; max-width:640px; line-height:1.7;">This is body copy set in Work Sans Regular at 16px. It is the primary reading size for all paragraphs, descriptions, and explanatory text. Line height is set to 1.7 for comfortable reading across all screen sizes. Body text should never compete visually with headings — let the type scale do the work.</p>
+                </div>
+
+                <div class="py-4">
+                  <p class="mb-1 small text-muted" style="font-family:'Work Sans',sans-serif;">small · Work Sans · 0.875rem · 400 · Caption / Label</p>
+                  <small style="font-family:'Work Sans',sans-serif; color:#777;">Caption text · Labels · Metadata · Type spec annotations</small>
+                  <p class="mt-2" style="font-family:'Work Sans',sans-serif; color:#555; max-width:600px;">Use small text for captions beneath images, technical labels under type specimens (as seen above), timestamps, and secondary metadata. It should never be used for primary content — it is always supplementary to a heading or body paragraph above it.</p>
+                </div>
+
+              </div>
+
+              <!-- Font Pairing -->
+              <h3 class="mb-3" style="font-family:'Work Sans',sans-serif; font-weight:600; color:#1A1A2E;">Font Pairing</h3>
+              <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                  <div class="p-4 rounded" style="background:#1A1A2E;">
+                    <p class="mb-1 small" style="color:#aaa; font-family:'Work Sans',sans-serif;">Display — Fraunces</p>
+                    <p style="font-family:'Fraunces',sans-serif; color:#fff; font-size:2rem; margin-bottom:0;">G·R</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-4 rounded" style="background:#f4f6ff;">
+                    <p class="mb-1 small" style="color:#888; font-family:'Work Sans',sans-serif;">Body / UI — Work Sans</p>
+                    <p style="font-family:'Work Sans',sans-serif; color:#1A1A2E; font-size:1rem; margin-bottom:0;">Clean. Minimal. Professional. Work Sans keeps long-form text legible and modern.</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="mb-2" style="font-family:'Work Sans',sans-serif; color:#555;">Google Fonts import used on every page:</p>
+              <div class="code-background rounded mb-5">
+                <pre class="language-markup p-3 m-0"><code>&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Work+Sans:wght@400;600&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="../js/sidebars.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganesh Raj | GR Design System — Nav Bar</title>
+  <link rel="icon" href="https://ganeshraj0901.github.io/Logo/Fav_icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="../css/sidebars.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-light bg-success border-bottom-0 sticky-top">
+    <button class="navbar-toggler d-block d-md-none navbar-hieght"
+      type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#sidebar" aria-controls="sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="offcanvas offcanvas-start bg-success d-md-block"
+    tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <a href="../index.html" class="sidebar-logo">G·R</a>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#foundations-collapse-m" aria-expanded="false">
+            Foundations
+          </button>
+          <div class="collapse" id="foundations-collapse-m">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../foundation/type.html" class="d-inline-flex text-decoration-none rounded">Typography</a></li>
+              <li><a href="../foundation/color.html" class="d-inline-flex text-decoration-none rounded">Color</a></li>
+              <li><a href="../foundation/logo.html" class="d-inline-flex text-decoration-none rounded">Logo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+            data-bs-toggle="collapse" data-bs-target="#components-collapse-m" aria-expanded="true">
+            Components
+          </button>
+          <div class="collapse show" id="components-collapse-m">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="d-inline-flex text-decoration-none rounded"><span class="activeLink rounded">Nav Bar</span></a></li>
+              <li><a href="component2.html" class="d-inline-flex text-decoration-none rounded">Thumbnail Card</a></li>
+              <li><a href="component3.html" class="d-inline-flex text-decoration-none rounded">Before/After Toggle</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#patterns-collapse-m" aria-expanded="false">
+            Page Patterns
+          </button>
+          <div class="collapse" id="patterns-collapse-m">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../patterns/page1.html" class="d-inline-flex text-decoration-none rounded">Homepage</a></li>
+              <li><a href="../patterns/page2.html" class="d-inline-flex text-decoration-none rounded">Case Study</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar shadow">
+        <div class="position-sticky bg-success vh-100 pt-3 px-2">
+          <a href="../index.html" class="sidebar-logo">G·R</a>
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                Foundations
+              </button>
+              <div class="collapse" id="foundations-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../foundation/type.html" class="d-inline-flex text-decoration-none rounded">Typography</a></li>
+                  <li><a href="../foundation/color.html" class="d-inline-flex text-decoration-none rounded">Color</a></li>
+                  <li><a href="../foundation/logo.html" class="d-inline-flex text-decoration-none rounded">Logo</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true">
+                Components
+              </button>
+              <div class="collapse show" id="components-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="d-inline-flex text-decoration-none rounded"><span class="activeLink rounded">Nav Bar</span></a></li>
+                  <li><a href="component2.html" class="d-inline-flex text-decoration-none rounded">Thumbnail Card</a></li>
+                  <li><a href="component3.html" class="d-inline-flex text-decoration-none rounded">Before/After Toggle</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                Page Patterns
+              </button>
+              <div class="collapse" id="patterns-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../patterns/page1.html" class="d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                  <li><a href="../patterns/page2.html" class="d-inline-flex text-decoration-none rounded">Case Study</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="container-fluid overflow-auto">
+          <div class="row p-4 p-md-5">
+            <div id="content">
+
+              <h2 style="font-family:'Fraunces',sans-serif; color:#1A1A2E;">Navigation Bar</h2>
+
+              <img src="../Images/Componets/Comp2.png" alt="Nav Bar design reference" class="img-fluid rounded shadow-sm mb-4">
+
+              <p class="mb-4" style="max-width:680px; font-family:'Work Sans',sans-serif; color:#444;">
+                The GR navigation bar is a minimal, full-width bar that sits at the top of every page. The logo mark is anchored to the left, and three text links — Home, About, and Resume — are spaced evenly on the right. The active page is indicated by bold weight. The design is intentionally light, using a white background and dark text to keep focus on the content below.
+              </p>
+
+              <!-- Accessibility -->
+              <h3 class="mb-3" style="font-family:'Work Sans',sans-serif; font-weight:600; color:#1A1A2E;">Accessibility</h3>
+              <ul class="mb-4" style="font-family:'Work Sans',sans-serif; color:#444; max-width:640px;">
+                <li class="mb-2">Wrap the navbar in a <code>&lt;nav&gt;</code> element with <code>aria-label="Main navigation"</code> so screen readers identify it as a landmark region.</li>
+                <li class="mb-2">All links must be keyboard-navigable via Tab and show a visible focus state — do not suppress the browser default outline without replacing it.</li>
+                <li class="mb-2">The active page link must include <code>aria-current="page"</code> to communicate location to assistive technologies.</li>
+                <li class="mb-2">Maintain sufficient contrast between the nav text and background — dark text on white exceeds WCAG AA at all sizes.</li>
+              </ul>
+
+              <!-- Details of use -->
+              <h3 class="mb-3" style="font-family:'Work Sans',sans-serif; font-weight:600; color:#1A1A2E;">Details of Use</h3>
+              <ul class="mb-5" style="font-family:'Work Sans',sans-serif; color:#444; max-width:640px;">
+                <li class="mb-1">Place on every page at the top, sticky or static.</li>
+                <li class="mb-1">Logo anchored to the far left; links (Home, About, Resume) on the far right with generous spacing between them.</li>
+                <li class="mb-1">Active page link is set in bold weight — no underline or color change.</li>
+                <li class="mb-1">On mobile, links collapse into a hamburger menu.</li>
+              </ul>
+
+              <!-- Code block -->
+              <h3 class="mb-3" style="font-family:'Work Sans',sans-serif; font-weight:600; color:#1A1A2E;">Code</h3>
+              <div class="rounded mb-5" style="background:#f5f5f5; border:1px solid #ddd;">
+<pre class="p-3 m-0" style="font-family:monospace; font-size:0.85rem; color:#111; white-space:pre-wrap;"><code>&lt;nav class=&quot;navbar navbar-expand-md&quot; aria-label=&quot;Main navigation&quot;
+  style=&quot;background:#1A1A2E; padding:0 1.5rem;&quot;&gt;
+
+  &lt;a class=&quot;navbar-brand fw-bold&quot; href=&quot;#&quot;
+    style=&quot;font-family:'Fraunces',sans-serif; color:#0E6DF9;&quot;&gt;G·R&lt;/a&gt;
+
+  &lt;button class=&quot;navbar-toggler border-0&quot; type=&quot;button&quot;
+    data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#demoNav&quot;
+    aria-controls=&quot;demoNav&quot; aria-expanded=&quot;false&quot;
+    aria-label=&quot;Toggle navigation&quot;&gt;
+    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+
+  &lt;div class=&quot;collapse navbar-collapse justify-content-end&quot; id=&quot;demoNav&quot;&gt;
+    &lt;ul class=&quot;navbar-nav gap-3&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;
+          style=&quot;color:#fff; border-bottom:2px solid #F5A623;&quot;&gt;Work&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;
+          style=&quot;color:rgba(255,255,255,0.7);&quot;&gt;About&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;
+          style=&quot;color:rgba(255,255,255,0.7);&quot;&gt;Contact&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="../js/sidebars.js"></script>
+</body>
+</html>

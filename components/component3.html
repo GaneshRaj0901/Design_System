@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganesh Raj | GR Design System — Before/After Toggle</title>
+  <link rel="icon" href="https://ganeshraj0901.github.io/Logo/Fav_icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="../css/sidebars.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-light bg-success border-bottom-0 sticky-top">
+    <button class="navbar-toggler d-block d-md-none navbar-hieght"
+      type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#sidebar" aria-controls="sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="offcanvas offcanvas-start bg-success d-md-block"
+    tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <a href="../index.html" class="sidebar-logo">G·R</a>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#foundations-collapse-m" aria-expanded="false">
+            Foundations
+          </button>
+          <div class="collapse" id="foundations-collapse-m">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../foundation/type.html" class="d-inline-flex text-decoration-none rounded">Typography</a></li>
+              <li><a href="../foundation/color.html" class="d-inline-flex text-decoration-none rounded">Color</a></li>
+              <li><a href="../foundation/logo.html" class="d-inline-flex text-decoration-none rounded">Logo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+            data-bs-toggle="collapse" data-bs-target="#components-collapse-m" aria-expanded="true">
+            Components
+          </button>
+          <div class="collapse show" id="components-collapse-m">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="component1.html" class="d-inline-flex text-decoration-none rounded">Nav Bar</a></li>
+              <li><a href="component2.html" class="d-inline-flex text-decoration-none rounded">Thumbnail Card</a></li>
+              <li><a href="#" class="d-inline-flex text-decoration-none rounded"><span class="activeLink rounded">Before/After Toggle</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#patterns-collapse-m" aria-expanded="false">
+            Page Patterns
+          </button>
+          <div class="collapse" id="patterns-collapse-m">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="../patterns/page1.html" class="d-inline-flex text-decoration-none rounded">Homepage</a></li>
+              <li><a href="../patterns/page2.html" class="d-inline-flex text-decoration-none rounded">Case Study</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar shadow">
+        <div class="position-sticky bg-success vh-100 pt-3 px-2">
+          <a href="../index.html" class="sidebar-logo">G·R</a>
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                Foundations
+              </button>
+              <div class="collapse" id="foundations-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../foundation/type.html" class="d-inline-flex text-decoration-none rounded">Typography</a></li>
+                  <li><a href="../foundation/color.html" class="d-inline-flex text-decoration-none rounded">Color</a></li>
+                  <li><a href="../foundation/logo.html" class="d-inline-flex text-decoration-none rounded">Logo</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true">
+                Components
+              </button>
+              <div class="collapse show" id="components-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="component1.html" class="d-inline-flex text-decoration-none rounded">Nav Bar</a></li>
+                  <li><a href="component2.html" class="d-inline-flex text-decoration-none rounded">Thumbnail Card</a></li>
+                  <li><a href="#" class="d-inline-flex text-decoration-none rounded"><span class="activeLink rounded">Before/After Toggle</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                Page Patterns
+              </button>
+              <div class="collapse" id="patterns-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../patterns/page1.html" class="d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                  <li><a href="../patterns/page2.html" class="d-inline-flex text-decoration-none rounded">Case Study</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="container-fluid overflow-auto">
+          <div class="row p-4 p-md-5">
+            <div id="content">
+
+              <h2 style="font-family:'Fraunces',sans-serif; color:#1A1A2E;">Before / After Toggle</h2>
+
+              <img src="../Images/Componets/Comp3.png" alt="Before/After Toggle design reference" class="img-fluid rounded shadow-sm mb-4">
+
+              <p class="mb-4" style="max-width:680px; font-family:'Work Sans',sans-serif; color:#444;">
+                The Before/After Toggle is a pill-shaped segmented button used to switch between two states — typically an earlier design iteration and a refined version. The active state (Before) is displayed with a white background and elevated shadow inside the pill; the inactive state (After) sits flush in a light grey background. This component is used on case study pages to communicate design process and decision-making at a glance.
+              </p>
+
+              <!-- Accessibility -->
+              <h3 class="mb-3" style="font-family:'Work Sans',sans-serif; font-weight:600; color:#1A1A2E;">Accessibility</h3>
+              <ul class="mb-4" style="font-family:'Work Sans',sans-serif; color:#444; max-width:640px;">
+                <li class="mb-2">Use <code>role="group"</code> with <code>aria-label="Compare before and after"</code> on the wrapper so screen readers understand the toggle as a unit.</li>
+                <li class="mb-2">Both "Before" and "After" labels must always be visible — never hidden — to support low-vision users.</li>
+                <li class="mb-2">The active state must be communicated via <code>aria-pressed="true"</code> on the active button, not color alone.</li>
+                <li class="mb-2">Both buttons must be keyboard-focusable and operable via Enter or Space.</li>
+              </ul>
+
+              <!-- Details of use -->
+              <h3 class="mb-3" style="font-family:'Work Sans',sans-serif; font-weight:600; color:#1A1A2E;">Details of Use</h3>
+              <ul class="mb-5" style="font-family:'Work Sans',sans-serif; color:#444; max-width:640px;">
+                <li class="mb-1">Used on case study pages to toggle between two design states or versions.</li>
+                <li class="mb-1">The pill container has a light grey background; the active segment is white with a subtle drop shadow.</li>
+                <li class="mb-1">Labels are always "Before" (left) and "After" (right).</li>
+                <li class="mb-1">Clicking either label switches the displayed content below the toggle.</li>
+              </ul>
+
+              <!-- Code block -->
+              <h3 class="mb-3" style="font-family:'Work Sans',sans-serif; font-weight:600; color:#1A1A2E;">Code</h3>
+              <div class="rounded mb-3" style="background:#f5f5f5; border:1px solid #ddd;">
+<pre class="p-3 m-0" style="font-family:monospace; font-size:0.85rem; color:#111; white-space:pre-wrap;"><code>&lt;!-- HTML --&gt;
+&lt;div class=&quot;ba-slider&quot; id=&quot;baSlider&quot;&gt;
+  &lt;img src=&quot;before.jpg&quot; alt=&quot;Before: initial design state&quot;&gt;
+  &lt;div class=&quot;ba-after&quot; id=&quot;baAfter&quot;&gt;
+    &lt;img src=&quot;after.jpg&quot; alt=&quot;After: refined design state&quot;&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;ba-label ba-label-before&quot;&gt;Before&lt;/span&gt;
+  &lt;span class=&quot;ba-label ba-label-after&quot;&gt;After&lt;/span&gt;
+  &lt;div class=&quot;ba-handle&quot; id=&quot;baHandle&quot;&gt;
+    &lt;div class=&quot;ba-handle-circle&quot;&gt;&amp;#8644;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="rounded mb-5" style="background:#f5f5f5; border:1px solid #ddd;">
+<pre class="p-3 m-0" style="font-family:monospace; font-size:0.85rem; color:#111; white-space:pre-wrap;"><code>// JS — drag interaction
+const slider = document.getElementById('baSlider');
+const after  = document.getElementById('baAfter');
+const handle = document.getElementById('baHandle');
+let dragging = false;
+
+function setPos(x) {
+  const rect = slider.getBoundingClientRect();
+  let pct = Math.min(Math.max((x - rect.left) / rect.width, 0), 1);
+  after.style.width  = (pct * 100) + '%';
+  handle.style.left  = (pct * 100) + '%';
+}
+
+slider.addEventListener('mousedown',  e => { dragging = true; setPos(e.clientX); });
+slider.addEventListener('touchstart', e => { dragging = true; setPos(e.touches[0].clientX); });
+window.addEventListener('mousemove',  e => { if (dragging) setPos(e.clientX); });
+window.addEventListener('touchmove',  e => { if (dragging) setPos(e.touches[0].clientX); });
+window.addEventListener('mouseup',    () => dragging = false);
+window.addEventListener('touchend',   () => dragging = false);</code></pre>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="../js/sidebars.js"></script>
+  <script>
+    const slider = document.getElementById('baSlider');
+    const after  = document.getElementById('baAfter');
+    const handle = document.getElementById('baHandle');
+    let dragging = false;
+
+    function setPos(x) {
+      const rect = slider.getBoundingClientRect();
+      let pct = Math.min(Math.max((x - rect.left) / rect.width, 0), 1);
+      after.style.width = (pct * 100) + '%';
+      handle.style.left = (pct * 100) + '%';
+    }
+
+    slider.addEventListener('mousedown',  e => { dragging = true; setPos(e.clientX); });
+    slider.addEventListener('touchstart', e => { dragging = true; setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('mousemove',  e => { if (dragging) setPos(e.clientX); });
+    window.addEventListener('touchmove',  e => { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('mouseup',    () => dragging = false);
+    window.addEventListener('touchend',   () => dragging = false);
+  </script>
+</body>
+</html>
